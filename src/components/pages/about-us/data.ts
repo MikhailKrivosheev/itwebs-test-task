@@ -42,4 +42,11 @@ const VALUES = [
   },
 ];
 
-export { MEMBERS, VALUES };
+const ACHIEVEMENTS = [
+  { title: '200+', description: 'Проектов завершено' },
+  { title: '50+', description: 'Специалистов в команде' },
+  { title: '6', description: 'Лет на рынке' },
+  { title: '98%', description: 'Довольных клиентов' },
+];
+
+export { MEMBERS, VALUES, ACHIEVEMENTS };

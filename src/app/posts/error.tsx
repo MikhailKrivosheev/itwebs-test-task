@@ -1,5 +1,9 @@
 'use client';
 
+import { ROUTE } from '@/constants/route';
+import { Route } from 'next';
+import { useRouter } from 'next/navigation';
+
 export default function Error({
   error,
   reset,
@@ -7,6 +11,8 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const router = useRouter();
+
   // Check if it's a page not found error
   const message = typeof error?.message === 'string' ? error.message : String(error ?? '');
   const normalizedMessage = message.toLowerCase();
@@ -26,7 +32,7 @@ export default function Error({
             onClick={() => {
               // If it's a page not found error, redirect to first page
               if (isPageNotFound) {
-                window.location.href = '/posts';
+                router.push(ROUTE.posts as Route);
               } else {
                 reset();
               }

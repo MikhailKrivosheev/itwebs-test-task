@@ -20,12 +20,12 @@ export default function Card({ post, className = '' }: CardProps) {
     <Link href={`/posts/${post.id}`} className={cardClassName}>
       <article className="flex h-full flex-col">
         <div className="mb-3 flex items-center gap-2">
-          <span className="text-sm">Пользователь {post.userId}</span>
+          <span className="text-gray-40">Пользователь {post.userId}</span>
         </div>
 
         <h3 className="text-lg mb-3 line-clamp-2 font-semibold transition-colors">{post.title}</h3>
 
-        <p className="text-sm line-clamp-4 flex-1 leading-relaxed">{post.body}</p>
+        <p className="text-sm line-clamp-4 flex-1 leading-relaxed text-gray-30">{post.body}</p>
 
         <div className="mt-4 flex items-center justify-between">
           <div className="flex items-center">

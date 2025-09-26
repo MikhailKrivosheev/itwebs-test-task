@@ -8,12 +8,12 @@ export const SEO_DATA = {
   },
   index: {
     title: 'Home - ITWEBS home',
-    description: 'Test task for ITWEBS',
+    description: 'Главная страница ITWEBS',
     pathname: ROUTE.index as string,
   },
   posts: {
-    title: 'Posts - ITWEBS',
-    description: 'Posts - ITWEBS',
+    title: 'Посты - ITWEBS',
+    description: 'Читайте и исследуйте посты, созданные нашими авторами',
     pathname: ROUTE.posts as string,
   },
   aboutUs: {

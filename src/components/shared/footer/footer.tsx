@@ -13,7 +13,7 @@ function Footer() {
       <div className="container">
         <div className="flex justify-between md:flex-col">
           <div className="flex flex-col">
-            <Link className="block" href={ROUTE.index}>
+            <Link className="button block" href={ROUTE.index}>
               <Image src={logo} width={90} height={18} alt="" />
               <span className="sr-only">NextJS</span>
             </Link>
@@ -34,6 +34,7 @@ function Footer() {
                           className="whitespace-nowrap font-medium leading-none tracking-tight opacity-80"
                           href={href}
                           size="md"
+                          theme="black"
                           rel={isExternalUrl ? 'noopener noreferrer' : undefined}
                           target={isExternalUrl ? '_blank' : undefined}
                         >

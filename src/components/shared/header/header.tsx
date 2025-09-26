@@ -20,10 +20,10 @@ function Header() {
       <header className="absolute left-0 right-0 top-4 z-10 h-[66px] px-safe pt-safe">
         <div className="container h-full">
           <div
-            className="md:pl-4.5 relative flex h-full items-center justify-between rounded-full bg-[rgba(255,255,255,0.40)] p-3.5 pl-8 shadow-[0_2px_20.5px_0_rgba(0,0,0,0.05)] backdrop-blur-xl md:py-2.5 md:pr-2.5 sm:py-2.5 sm:pl-3.5 sm:pr-6"
+            className="relative flex h-full items-center justify-between rounded-full bg-[rgba(255,255,255,0.40)] p-3.5 pl-8 shadow-[0_2px_20.5px_0_rgba(0,0,0,0.05)] backdrop-blur-xl md:py-2.5 md:pl-4.5 md:pr-2.5 sm:py-2.5 sm:pl-3.5 sm:pr-6"
             aria-label="Global"
           >
-            <Link href="/" className="flex items-center gap-2 text-20 font-bold">
+            <Link href="/" className="button flex items-center gap-2 text-20 font-bold">
               <Image src={logo} width={38} height={38} alt="" priority />
               <span className="text-black">ITWEBS</span>
             </Link>

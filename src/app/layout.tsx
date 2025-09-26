@@ -10,7 +10,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.variable}>
       <body id="__next" className="flex min-h-screen flex-col">
         <Header />
-        <main className="grow">{children}</main>
+        <main className="grow">
+          <div className="container pt-[186px]">{children}</div>
+        </main>
         <Footer />
       </body>
     </html>

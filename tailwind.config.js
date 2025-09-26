@@ -6,11 +6,9 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['var(--font-inter)', ...defaultTheme.fontFamily.sans],
-      mono: ['', ...defaultTheme.fontFamily.mono],
     },
     fontSize: {
       12: '12px',
-      13: '13px',
       14: '14px',
       15: '15px',
       16: '16px',
@@ -28,7 +26,9 @@ module.exports = {
       52: '52px',
       56: '56px',
       64: '64px',
+      72: '72px',
       80: '80px',
+      96: '96px',
     },
     lineHeight: {
       ...defaultTheme.lineHeight,
@@ -39,27 +39,32 @@ module.exports = {
       tight: '-0.02em',
       normal: '0',
     },
+    boxShadow: {
+      base: '0 2px 20px 0 rgba(0, 0, 0, 0.05)',
+      big: '0 4px 40px 0 rgba(0, 0, 0, 0.15)',
+      logo: '0 1px 5px 0 rgba(0, 0, 0, 0.1)',
+      bento: '0 0 4px 0 rgba(0, 0, 0, 0.12)',
+    },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      white: colors.white,
-      black: colors.black,
-      red: colors.red,
-      green: colors.green,
-      primary: {
-        1: '',
-      },
-      secondary: {
-        1: '',
-      },
+      black: '#000000',
+      white: '#FFFFFF',
+      blue: '#0C79FE',
+      'blue-light': '#3093E8',
       gray: {
-        1: '',
-        2: '#e5e7eb',
-        20: '#333',
-      },
-      blue: {
-        light: '#3093E8',
+        10: '#1A1A1A',
+        20: '#333333',
+        30: '#4D4D4D',
+        40: '#666666',
+        50: '#808080',
+        60: '#999999',
+        70: '#B3B3B3',
+        80: '#CCCCCC',
+        90: '#E6E6E6',
+        94: '#F0F0F0',
+        98: '#FAFAFA',
       },
     }),
     screens: {
@@ -69,6 +74,11 @@ module.exports = {
       sm: { max: '767px' },
       xs: { max: '639px' },
       '2xs': { max: '413px' },
+    },
+    extend: {
+      spacing: {
+        4.5: '1.125rem',
+      },
     },
   },
   corePlugins: {
